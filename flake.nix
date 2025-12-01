@@ -16,7 +16,7 @@
         lib = import ./lib.nix { inherit (inputs.nixpkgs) lib; };
         solution = {
           y2025 = {
-            d1 = import ./2025/1 { inherit (inputs.self) lib; };
+            d1p1 = import ./2025/d1/p1.nix { inherit (inputs.self) lib; };
           };
         };
       };

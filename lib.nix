@@ -39,5 +39,11 @@ lib.extend (
       tail (scan f init xs);
 
     countEq = x: count (y: y == x);
+
+    sig = x: if x < 0 then -1 else 1;
+
+    abs = x: if x < 0 then -1 * x else x;
+
+    decrToZ = x: if x < 0 then x + 1 else x - 1;
   }
 )
